@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Question 1</title>   
+    <!-- Crud Application -->
+</head>
+<style>
+  
+    * {
+        margin:0px;
+        padding:0px;
+    }
+    
+    .data {
+      
+        height: 500px;
+        width: 80%;
+        background-color: lightgray;
+        margin-left: 10%;
+        margin-top: 50px;
+        padding: 20px;
+        display: inline-block; 
+      }
+
+    .table {
+        width: 100%;
+        margin-top: 20px;
+      }
+    th,
+    td {
+        height: 20px;
+        text-align: center;
+        padding: 3px;
+      }
+    .form {
+        margin-top: 20px;
+      }
+    input {
+        height: 40px;
+        text-indent: 20px;
+      }
+    button {
+        height: 10px;
+        padding: 20px;
+      }
+
+
+
+</style>
+<body>
+    <div class="data">
+        <h1 style="color:blue; text-align: center;">Salary List</h1>
+
+
+        <div class="form">
+          <input type="text" placeholder="Enter the name to search" style="width: 300px;" id="searchbyname" onkeyup="searchbyname()"/>
+          <input type="text" placeholder="Enter the city to search" style="width: 300px;" id="searchbycity" onkeyup="searchbycity()"/>
+        </div>
+
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Sr no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Salary</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="tdata" id="tdata"></tbody>
+          </table>
+    </div>
+    <script src="Day6_Question1.js"></script>
+</body>
+</html>
